@@ -1,7 +1,7 @@
 package com.example.lemonsoju_blog.controller;
 
-import com.example.lemonsoju_blog.domain.Post;
 import com.example.lemonsoju_blog.request.PostCreate;
+import com.example.lemonsoju_blog.response.PostResponse;
 import com.example.lemonsoju_blog.service.PostService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,8 +22,10 @@ public class PostController {
     }
 
     @GetMapping("/posts/{postId}")
-    public Post get(@PathVariable Long postId) {
-        Post post = postService.get(postId);
-        return post;
+    public PostResponse get(@PathVariable Long postId) {
+        PostResponse response = postService.get(postId);
+        return response;
     }
+
 }
+
