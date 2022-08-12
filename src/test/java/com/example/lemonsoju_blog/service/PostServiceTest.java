@@ -4,12 +4,13 @@ import com.example.lemonsoju_blog.domain.Post;
 import com.example.lemonsoju_blog.repository.PostRepository;
 import com.example.lemonsoju_blog.request.PostCreate;
 import com.example.lemonsoju_blog.response.PostResponse;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -67,4 +68,29 @@ class PostServiceTest {
         assertEquals("foo", response.getTitle());
         assertEquals("bar", response.getContent());
     }
+
+    @Test
+    @DisplayName("글 여러개 조회")
+    void test3() {
+        // given
+        postRepository.saveAll(List.of(
+                Post.builder()
+                        .title("foo1")
+                        .content("bar1")
+                        .build(),
+                Post.builder()
+                    .title("foo2")
+                    .content("ba2")
+                    .build()
+        ));
+
+        // when
+        List<PostResponse> posts = postService.getList();
+
+        // then
+        assertEquals(2L, posts.size());
+
+    }
+
+
 }
