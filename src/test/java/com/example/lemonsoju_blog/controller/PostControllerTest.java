@@ -4,15 +4,12 @@ import com.example.lemonsoju_blog.domain.Post;
 import com.example.lemonsoju_blog.repository.PostRepository;
 import com.example.lemonsoju_blog.request.PostCreate;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.hamcrest.Matchers;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
@@ -147,14 +144,38 @@ class PostControllerTest {
         postRepository.saveAll(requestPosts);
 
         // expected
-        mockMvc.perform(get("/posts?page=1&sort=id,desc")
+        mockMvc.perform(get("/posts?page=1&size=10")
                         .contentType(APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.length()", is(5)))
+                .andExpect(jsonPath("$.length()", is(10)))
                 .andExpect(jsonPath("$[0].id").value(30))
                 .andExpect(jsonPath("$[0].title").value("호돌맨 제목 - 30"))
                 .andExpect(jsonPath("$[0].content").value("반포자이 - 30"))
                 .andDo(print());
+    }
 
+
+    @Test
+    @DisplayName("페이지를 0으로 요청해면 첫 페이지를 가져온다.")
+    void test6() throws Exception {
+        // given
+
+        List<Post> requestPosts = IntStream.range(1,31)
+                .mapToObj(i -> Post.builder()
+                        .title("호돌맨 제목 - " + i)
+                        .content("반포자이 - " + i)
+                        .build())
+                .collect(Collectors.toList());
+        postRepository.saveAll(requestPosts);
+
+        // expected
+        mockMvc.perform(get("/posts?page=0&size=10")
+                        .contentType(APPLICATION_JSON))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()", is(10)))
+                .andExpect(jsonPath("$[0].id").value(30))
+                .andExpect(jsonPath("$[0].title").value("호돌맨 제목 - 30"))
+                .andExpect(jsonPath("$[0].content").value("반포자이 - 30"))
+                .andDo(print());
     }
 }
