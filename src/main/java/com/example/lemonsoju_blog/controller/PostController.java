@@ -2,6 +2,7 @@ package com.example.lemonsoju_blog.controller;
 
 import com.example.lemonsoju_blog.domain.Post;
 import com.example.lemonsoju_blog.request.PostCreate;
+import com.example.lemonsoju_blog.request.PostEdit;
 import com.example.lemonsoju_blog.request.PostSearch;
 import com.example.lemonsoju_blog.response.PostResponse;
 import com.example.lemonsoju_blog.service.PostService;
@@ -36,5 +37,9 @@ public class PostController {
         return postService.getList(postSearch);
     }
 
+    @PatchMapping("/posts/{postId}")
+    public PostResponse edit(@PathVariable Long postId, @RequestBody @Valid PostEdit request) {
+        return postService.edit(postId, request);
+    }
 }
 
