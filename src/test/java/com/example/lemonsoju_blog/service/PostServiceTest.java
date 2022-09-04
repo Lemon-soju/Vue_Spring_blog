@@ -1,6 +1,7 @@
 package com.example.lemonsoju_blog.service;
 
 import com.example.lemonsoju_blog.domain.Post;
+import com.example.lemonsoju_blog.exception.PostNotFound;
 import com.example.lemonsoju_blog.repository.PostRepository;
 import com.example.lemonsoju_blog.request.PostCreate;
 import com.example.lemonsoju_blog.request.PostEdit;
@@ -65,8 +66,6 @@ class PostServiceTest {
                 .content("bar")
                 .build();
         postRepository.save(requestPost);
-
-        Long postId = 1L;
 
         // when
         PostResponse response = postService.get(requestPost.getId());
@@ -174,5 +173,61 @@ class PostServiceTest {
 
         // then
         assertEquals(0, postRepository.count());
+    }
+
+
+    @Test
+    @DisplayName("글 1개 조회 - 존재하지 않는 글")
+    void test7() {
+        // given
+        Post post = Post.builder()
+                .title("호돌맨")
+                .content("반포자이")
+                .build();
+        postRepository.save(post);
+
+        // expected
+        assertThrows(PostNotFound.class, () -> {
+            postService.get(post.getId() + 1L);
+        });
+    }
+
+    @Test
+    @DisplayName("게시글 삭제 - 존재하지 않는 글")
+    void test8() {
+        // given
+        Post post = Post.builder()
+                .title("호돌맨")
+                .content("반포자이")
+                .build();
+
+        postRepository.save(post);
+
+        // expected
+        assertThrows(PostNotFound.class, () -> {
+            postService.delete(post.getId() + 1L);
+        });
+    }
+
+    @Test
+    @DisplayName("글 내용 수정 - 존재하지 않는 글")
+    void test9() {
+        // given
+        Post post = Post.builder()
+                .title("호돌맨")
+                .content("반포자이")
+                .build();
+
+        postRepository.save(post);
+
+
+        PostEdit postEdit = PostEdit.builder()
+                .content("초가집")
+                .build();
+
+        // expected
+        assertThrows(PostNotFound.class, () -> {
+            postService.delete(post.getId() + 1L);
+        });
     }
 }
