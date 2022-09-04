@@ -1,6 +1,7 @@
 package com.example.lemonsoju_blog.controller;
 
 import com.example.lemonsoju_blog.domain.Post;
+import com.example.lemonsoju_blog.exception.InvalidRequest;
 import com.example.lemonsoju_blog.request.PostCreate;
 import com.example.lemonsoju_blog.request.PostEdit;
 import com.example.lemonsoju_blog.request.PostSearch;
@@ -24,6 +25,7 @@ public class PostController {
 
     @PostMapping("/posts")
     public void post(@RequestBody @Valid PostCreate request) {
+        request.validate();
         postService.write(request);
     }
 
