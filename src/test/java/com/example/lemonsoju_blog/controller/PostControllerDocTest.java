@@ -15,6 +15,7 @@ import org.springframework.restdocs.RestDocumentationExtension;
 import org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders;
 
 import org.springframework.restdocs.payload.PayloadDocumentation;
+import org.springframework.restdocs.snippet.Attributes;
 import org.springframework.test.web.servlet.MockMvc;
 
 
@@ -24,6 +25,7 @@ import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuild
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
 import static org.springframework.restdocs.payload.PayloadDocumentation.*;
 import static org.springframework.restdocs.request.RequestDocumentation.*;
+import static org.springframework.restdocs.snippet.Attributes.key;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -54,17 +56,17 @@ public class PostControllerDocTest {
         postRepository.save(post);
 
         // expected
-        this.mockMvc.perform(get("/posts/{postId}", 1L)
+        mockMvc.perform(get("/posts/{postId}", 1L)
                         .accept(APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andDo(document("index",
+                .andDo(document("post-inquiry",
                         pathParameters(
                                 parameterWithName("postId").description("게시글 ID")
                         ),
                         responseFields(
                                 fieldWithPath("id").description("게시글 ID"),
-                                fieldWithPath("title").description("게시글 제목"),
+                                fieldWithPath("title").description("제목"),
                                 fieldWithPath("content").description("내용")
                         )
                 ));
@@ -85,16 +87,17 @@ public class PostControllerDocTest {
         String json = objectMapper.writeValueAsString(request);
 
         // expected
-        this.mockMvc.perform(post("/posts")
+        mockMvc.perform(post("/posts")
                         .contentType(APPLICATION_JSON)
                         .accept(APPLICATION_JSON)
                         .content(json))
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andDo(document("index",
+                .andDo(document("post-create",
                         requestFields(
-                                fieldWithPath("title").description("제목"),
-                                fieldWithPath("content").description("내용")
+                                fieldWithPath("title").description("제목")
+                                        .attributes(key("constraint").value("좋은제목 입력해주세요")),
+                                fieldWithPath("content").description("내용").optional()
                         )
                 ));
     }
