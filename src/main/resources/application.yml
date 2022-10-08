@@ -11,7 +11,7 @@ spring:
         default-page-size: 5
 
   datasource:
-    url: jdbc:h2:tcp://localhost/~/lemonsoju;MVCC=TRUE
+    url: jdbc:h2:tcp://localhost/~/lemonsoju
     username: sa
     password:
     driver-class-name: org.h2.Driver
