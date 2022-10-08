@@ -7,7 +7,10 @@ const title = ref("")
 const content = ref("")
 
 const write = function () {
-  axios.get("http://localhost:8080")
+  axios.post("http://localhost:8080/posts", {
+    title: title.value,
+    content: content.value
+  });
 }
 </script>
 
