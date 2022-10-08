@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2741d175-3186-404b-855d-883584cd19b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/ddl.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/views/WriteView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/views/WriteView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lemonsoju_blog/config/WebConfig.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,8 +197,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PostServiceTest.test4" />
         <item itemvalue="Gradle.PostServiceTest" />
+        <item itemvalue="Gradle.PostServiceTest.test4" />
         <item itemvalue="Gradle.PostServiceTest.test3" />
         <item itemvalue="Gradle.PostServiceTest.test2" />
         <item itemvalue="Gradle.PostServiceTest.test1" />
@@ -211,7 +213,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665071133978</updated>
-      <workItem from="1665071137320" duration="10221000" />
+      <workItem from="1665071137320" duration="13063000" />
     </task>
     <servers />
   </component>
