@@ -2,9 +2,12 @@
 
 import axios from 'axios';
 import {ref} from "vue";
+import {useRouter} from "vue-router";
 
 const title = ref("")
 const content = ref("")
+
+const router = useRouter();
 
 const posts = ref([]);
 
@@ -13,13 +16,15 @@ axios.get("/lemonsoju-api/posts?page=1&size=5").then((response) => {
     posts.value.push(r);
   })
 });
+
 </script>
 
 <template>
   <ul>
     <li v-for="post in posts" :key="post.id">
       <div>
-        {{ post.title }}
+        <router-link :to="{name: 'read', params: {postId: post.id} }">{{
+            post.title }}</router-link>
       </div>
 
       <div>
