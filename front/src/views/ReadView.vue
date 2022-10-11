@@ -22,6 +22,13 @@ const moveToEdit = () => {
   router.push({name: "edit", params: {postId: props.postId }})
 }
 
+const moveToDelete = () => {
+  axios.delete(`/lemonsoju-api/posts/${props.postId}`).then(() => {
+      router.replace({name: "home"})
+  });
+};
+
+
 onMounted(() => {
   axios.get(`/lemonsoju-api/posts/${props.postId}`).then((response) => {
     post.value = response.data;
@@ -54,6 +61,7 @@ onMounted(() => {
     <el-col>
       <div class="d-flex justify-content-end">
         <el-button type="warning" @click="moveToEdit()">수정</el-button>
+        <el-button type="warning" @click="moveToDelete()">삭제</el-button>
       </div>
     </el-col>
   </el-row>
