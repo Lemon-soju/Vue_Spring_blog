@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2741d175-3186-404b-855d-883584cd19b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/front/css/jquery.bxslider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/js/jquery.bxslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/assets/집게리아.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/views/KrustyKrab/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/views/PlaygroundView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/views/ResumeView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/router/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/views/ReadView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/views/ReadView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/ddl.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lemonsoju_blog/service/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lemonsoju_blog/service/PostServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +69,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/LG/Desktop/lemonSoju/front/js",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
     "spring.configuration.checksum": "bb4612f72534ff20d129c33e9c730c8b",
     "ts.external.directory.path": "C:\\Users\\LG\\Desktop\\lemonSoju\\front\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LG\Desktop\lemonSoju\front\js" />
+      <recent name="C:\Users\LG\Desktop\lemonSoju\front\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LG\Desktop\lemonSoju\front\src\assets" />
+      <recent name="C:\Users\LG\Desktop\lemonSoju\front" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.LemonsojuBlogApplication">
     <configuration name="LemonsojuBlogApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.lemonsoju_blog.LemonsojuBlogApplication" />
@@ -100,7 +124,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PostServiceTest.test2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostServiceTest.test10" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -113,30 +137,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.lemonsoju_blog.service.PostServiceTest.test2&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="PostServiceTest.test3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.lemonsoju_blog.service.PostServiceTest.test3&quot;" />
+            <option value="&quot;com.example.lemonsoju_blog.service.PostServiceTest.test10&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,6 +170,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="PostServiceTest.test5" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.lemonsoju_blog.service.PostServiceTest.test5&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="lemonSoju" />
       <method v="2">
@@ -191,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LemonsojuBlogApplication" />
         <item itemvalue="Gradle.PostServiceTest" />
+        <item itemvalue="Gradle.PostServiceTest.test10" />
+        <item itemvalue="Gradle.PostServiceTest.test5" />
+        <item itemvalue="Application.LemonsojuBlogApplication" />
         <item itemvalue="Gradle.PostServiceTest.test4" />
-        <item itemvalue="Gradle.PostServiceTest.test3" />
-        <item itemvalue="Gradle.PostServiceTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -208,12 +232,18 @@
       <option name="presentableId" value="Default" />
       <updated>1665071133978</updated>
       <workItem from="1665071137320" duration="36509000" />
-      <workItem from="1665487970790" duration="905000" />
+      <workItem from="1665487970790" duration="19063000" />
+      <workItem from="1665743224422" duration="2593000" />
+      <workItem from="1665971688489" duration="18153000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -228,5 +258,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
