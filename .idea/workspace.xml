@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2741d175-3186-404b-855d-883584cd19b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/front/css/jquery.bxslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/js/jquery.bxslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/assets/집게리아.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/views/KrustyKrab/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/views/PlaygroundView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/views/ResumeView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/views/ReadView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/views/ReadView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/ddl.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/lemonsoju_blog/service/PostServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/lemonsoju_blog/service/PostServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/views/ResumeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/views/ResumeView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +26,17 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lemonsoju_blog" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="lemonsoju_blog" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -69,9 +67,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/LG/Desktop/lemonSoju/front/js",
+    "last_opened_file_path": "C:/Users/LG/Desktop/lemonSoju/build.gradle",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.intentionPowerPack",
     "spring.configuration.checksum": "bb4612f72534ff20d129c33e9c730c8b",
     "ts.external.directory.path": "C:\\Users\\LG\\Desktop\\lemonSoju\\front\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -215,10 +212,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LemonsojuBlogApplication" />
         <item itemvalue="Gradle.PostServiceTest" />
         <item itemvalue="Gradle.PostServiceTest.test10" />
         <item itemvalue="Gradle.PostServiceTest.test5" />
-        <item itemvalue="Application.LemonsojuBlogApplication" />
         <item itemvalue="Gradle.PostServiceTest.test4" />
       </list>
     </recent_temporary>
@@ -234,7 +231,9 @@
       <workItem from="1665071137320" duration="36509000" />
       <workItem from="1665487970790" duration="19063000" />
       <workItem from="1665743224422" duration="2593000" />
-      <workItem from="1665971688489" duration="18153000" />
+      <workItem from="1665971688489" duration="19055000" />
+      <workItem from="1666783884501" duration="66000" />
+      <workItem from="1671444700975" duration="1122000" />
     </task>
     <servers />
   </component>

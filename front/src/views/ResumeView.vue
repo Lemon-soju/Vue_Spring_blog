@@ -69,7 +69,7 @@
       Project Experience.
 
       <div style="font-size: 1.75rem; margin-top: 100px; color: #7e7e7e; text-decoration: underline">
-        <a href="https://lemon-soju.tistory.com/40">시나리오 기반 모의해킹 프로젝트</a>a>
+        <a href="https://lemon-soju.tistory.com/40">시나리오 기반 모의해킹 프로젝트</a>
       </div>
       <div class="normal_1" style="margin-top: 30px">
         보안프로젝트 모의해킹 실무 과정 30기 팀원들과 함께 시나리오를 구성하여 모의해킹 및 침해대응
